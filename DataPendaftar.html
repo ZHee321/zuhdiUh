@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data pendaftar</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #cccccc;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #011d01;
+                color: #d48610;
+                text-align: center;
+                padding: 1px 0;
+            
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+            }
+
+            .logo img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
+
+            nav {
+                background-color: #093f02;
+                text-align: right;
+                padding: 2px;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+            }
+        
+
+            
+         nav ul{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                gap: 1rem;
+    
+            }
+
+            nav ul li a{
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-weight: 600;
+            color: rgb(233, 233, 233);
+            padding: 8px 0;
+            transform: all;
+            transition-duration:300ms ;
+            border-bottom: 1px solid  rgba(197, 122, 9, 0);
+            }
+            nav ul li a:hover{
+            color: rgb(248, 184, 9);
+            border-bottom: 2px solid rgb(233, 233, 233);
+            }
+            main {
+                padding: 20px;
+            }
+
+            .content {
+                background-color: #fff;
+                padding: 30px;
+                margin-top: 10px;
+                width:80%;
+                margin: 0 auto;
+                border-radius: 10px;
+                box-shadow: 0px 10px 20px black;
+            }
+          .content h1{
+            text-align: center;
+            color: #093f02;
+          }
+
+            table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(19, 26, 12, 0.884);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center; 
+        }
+        th {
+            background-color: #224b06;
+            color: rgb(255, 255, 255);
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease; 
+        }
+        img:hover {
+            transform: scale(1.1); 
+        }
+        
+            
+        .footer{
+                background-color: #052702;
+                color: #fff;
+                text-align: left;
+                padding: 10px;
+            }
+
+            .footer ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .footer ul li {
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+<header>
+    
+    <div class="logo">
+
+        <div class="logo"><img src="../img/UNIVERSITAS.png" alt="Logo"> </div>
+        <div class="logo"><marquee><h1>Data Pendaftar Mahasiswa Baru 2024/2025</h1></marquee></div>
+
+    </div>
+    <nav>
+        <ul class="link-nav">
+            <li><a href="Beranda.html">Beranda</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+            <li><a href="Daftar.html">Daftar</a></li>
+            <li><a href="DataPendaftar.html">Data Pendaftar</a></li>
+        </ul>
+    </nav>
+</header><br>
+
+    <section class="content">  
+    
+        <div><h2 style="text-align: center;">Data Pendaftaran Mahasiswa Baru Tahun 2024-2025</h2>
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>NPM</th>
+                    <th>Alamat</th>
+                    <th>Email</th>
+                    <th>Foto</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Maspu' zuhdi</td>
+                    <td>220305037</td>
+                    <td>Suntalangu</td>
+                    <td>maspuzuhdi09@gmail.com</td>
+                    <td><img src=" https://i.pinimg.com/originals/f9/e1/1a/f9e11a06eecc1c266aaee7c23b3fb66e.jpg" alt="Foto zuhdi"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ginayatul Hayati</td>
+                    <td>220305067</td>
+                    <td>Pringga Baya</td>
+                    <td>gna@gmail.com</td>
+                    <td><img src=" https://siapkerja.sidoarjokab.go.id/storage/images/client/profile/44fc66ac654be4a3d8300214265c7686.jpg" alt=" foto Ginayatul"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Haris Mahyudi</td>
+                    <td>220320003</td>
+                    <td>Paok Motong</td>
+                    <td>haris@gmail.com</td>
+                    <td><img src="https://i.pinimg.com/736x/f8/13/f8/f813f8193e248a227cbaac02a2c67bb0.jpg" alt="foto haris"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Siska Herlia Isqi</td>
+                    <td>220320004</td>
+                    <td>Sakra Timur</td>
+                    <td>isqi@gmail.com</td>
+                    <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZzUuu4PkZ0mEtIPwStvdZqzwSkQpg20atVs-IS3t5A&s" alt="foto siska"></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Gusti Bagus Heriadi</td>
+                    <td>220320039</td>
+                    <td>Selong</td>
+                    <td>heri08@gmail.com</td>
+                    <td><img src="https://i.pinimg.com/736x/98/b6/62/98b662bd039900e392b5fb8315973f0e.jpg" alt="foto anam"></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Baiti Jannati</td>
+                    <td>220320049</td>
+                    <td>Pringga Sela</td>
+                    <td>Baiti08@gmail.com</td>
+                    <td><img src="https://siapkerja.sidoarjokab.go.id/storage/images/client/profile/44fc66ac654be4a3d8300214265c7686.jpg" alt="foto anam"></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Aditya Permana Hadi</td>
+                    <td>220320035</td>
+                    <td>Sekarteja</td>
+                    <td>Adit@gmail.com</td>
+                    <td><img src="https://i.pinimg.com/736x/98/b6/62/98b662bd039900e392b5fb8315973f0e.jpg" alt="foto anam"></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Markonah</td>
+                    <td>220320056</td>
+                    <td>Suralaga Induk</td>
+                    <td>markonaah@gmail.com</td>
+                    <td><img src="https://siapkerja.sidoarjokab.go.id/storage/images/client/profile/44fc66ac654be4a3d8300214265c7686.jpg" alt="foto anam"></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Yustian Bayu Sasaka</td>
+                    <td>220320023</td>
+                    <td>Masbagek</td>
+                    <td>bayu@gmail.com</td>
+                    <td><img src="https://i.pinimg.com/736x/f8/13/f8/f813f8193e248a227cbaac02a2c67bb0.jpg" alt="foto anam"></td>
+                </tr>
+               
+                </tr>
+            </table></div>
+
+       
+    </section>
+
+<div class="footer">
+    <h4>Tentang kami :</h4>
+    <h5>Bersaing dan Berbudaya Santri</h5>
+    <ul>
+        <li>Alamat : Jl. TGKH. M. Zainuddin Abdul Madijd 132 Pancor Lombok Timur</li>
+        <li>Email  : universitas@hamzanwadi.ac.id</li>
+        <li>Contact : 0376 - 22954</li>
+    </ul>
+</div>
+
+</body>
+</html>
+

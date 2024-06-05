@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #cccccc;
+                margin: 0;
+                padding: 0;
+            }
+
+            header {
+                background-color: #011d01;
+                color: #d48610;
+                text-align: center;
+                padding: 1px 0;
+            
+            }
+
+            .logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+            }
+
+            .logo img {
+                width: 50px;
+                height: 50px;
+                margin-right: 10px;
+            }
+
+            nav {
+                background-color: #093f02;
+                text-align: right;
+                padding: 2px;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+            }
+        
+
+            
+         nav ul{
+                display: flex;
+                align-items: center;
+                list-style: none;
+                gap: 1rem;
+    
+            }
+
+            nav ul li a{
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            font-weight: 600;
+            color: rgb(233, 233, 233);
+            padding: 8px 0;
+            transform: all;
+            transition-duration:300ms ;
+            border-bottom: 1px solid  rgba(197, 122, 9, 0);
+            }
+            nav ul li a:hover{
+            color: rgb(248, 184, 9);
+            border-bottom: 2px solid rgb(233, 233, 233);
+            }
+            main {
+                padding: 20px;
+            }
+
+            .content {
+                background-color: #fff;
+                padding: 30px;
+                margin-top: 10px;
+                width: 60%;
+                margin: 0 auto;
+                border-radius: 10px;
+                box-shadow: 0px 10px 20px black;
+            }
+          .content h1{
+            text-align: center;
+            color: #093f02;
+          }
+     
+
+#registrasi-form {
+    width: 40%;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #093f02;
+}
+
+#registrasi-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #dd9d14;
+
+}
+
+#registrasi-form input, #registrasi-form textarea {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+}
+
+#registrasi-form input[type="submit"] {
+    background-color: #d4840c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registrasi-form input[type="submit"]:hover {
+    background-color: #0aa7a7;
+    color: black;
+}
+
+#registrasi-table {
+    width: 100%;
+    margin: 40px auto;
+    border-collapse: collapse;
+   
+}
+
+#registrasi-table th, #registrasi-table td {
+    border: 1px solid #ce9907;
+    padding: 10px;
+    text-align: left;
+}
+
+#registrasi-table th {
+    background-color: #23550c;
+    color:#f0f0f0
+}
+            
+            .footer{
+                background-color: #052702;
+                color: #fff;
+                text-align: left;
+                padding: 10px;
+            }
+
+            .footer ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .footer ul li {
+                text-decoration: none;
+            }
+
+
+    </style>
+</head>
+<body>
+<header>
+    
+    <div class="logo">
+
+        <div class="logo"><img src="../img/UNIVERSITAS.png" alt="Logo"> </div>
+        <div class="logo"><marquee><h1>FORM REGISTRASI</h1></marquee></div>
+
+    </div>
+    <nav>
+        <ul class="link-nav">
+            <li><a href="Beranda.html">Beranda</a></li>
+            <li><a href="Profil.html">Profil</a></li>
+            <li><a href="Daftar.html">Daftar</a></li>
+            <li><a href="DataPendaftar.html">Data Pendaftar</a></li>
+        </ul>
+    </nav>
+</header><br>
+
+    <section class="content">  
+        <h1>Form Registrasi</h1>
+    <form id="registrasi-form">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="npm">NPM:</label>
+        <input type="text" id="npm" name="npm"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat"></textarea><br><br>
+        <input type="submit" value="Daftar">
+    </form>
+    <table id="registrasi-table" borde="solid 1px">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>NPM</th>
+                <th>Email</th> 
+                <th>Alamat</th>
+            </tr>
+        </thead>
+        <tbody id="registrasi-data"></tbody>
+    </table>
+</body>
+</html>
+       
+    </section>
+
+<div class="footer">
+    <h4>Tentang kami :</h4>
+    <h5>Bersaing dan Berbudaya Santri</h5>
+    <ul>
+        <li>Alamat : Jl. TGKH. M. Zainuddin Abdul Madijd 132 Pancor Lombok Timur</li>
+        <li>Email  : universitas@hamzanwadi.ac.id</li>
+        <li>Contact : 0376 - 22954</li>
+    </ul>
+</div>
+
+<script>
+    const form = document.getElementById('registrasi-form');
+const table = document.getElementById('registrasi-table');
+const dataTbody = document.getElementById('registrasi-data');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    const row = document.createElement('tr');
+    Object.keys(data).forEach((key) => {
+        const cell = document.createElement('td');
+        cell.textContent = data[key];
+        row.appendChild(cell);
+    });
+    dataTbody.appendChild(row);
+
+    form.reset();
+});
+</script>
+</body>
+</html>
+
